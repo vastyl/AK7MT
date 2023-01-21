@@ -1,11 +1,13 @@
 <resources>
     <string name="app_name">NoteApp</string>
     <!-- menu horni -->
-    <string name="action_note">Přidat poznámku</string>
+    <string name="action_note">Poznámky</string>
     <string name="action_settings">Nastavení</string>
     <string name="action_api">Ukázka API</string>
     <!--about -->
-    <string name="about_TextView">O programu</string>
+    <string name="about_TextView_header">O aplikaci NoteApp</string>
+    <string name="about_TextView_text">Tato aplikace vznikla pro potřeby předmětu AK7MT.</string>
+
     <!-- settings -->
     <!-- api -->
 
@@ -19,4 +21,19 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="add_actionitem">Přidat novinku</string>
 </resources>
