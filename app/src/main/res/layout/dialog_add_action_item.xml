@@ -4,14 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange"
+    android:background="@color/orange_light"
     android:orientation="vertical" >
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="TextView"
+        android:autoText="false"
+        android:text="@string/tvTitle"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="175dp" />
 
@@ -31,6 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="Přidat"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etName" />
 
@@ -40,6 +46,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="Zrušit"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etName" />
 </androidx.constraintlayout.widget.ConstraintLayout>

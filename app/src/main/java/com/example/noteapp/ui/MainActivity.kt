@@ -47,37 +47,9 @@ class MainActivity : AppCompatActivity() , KodeinAware {
                     }
                 }).show()
         }
-       /* binding.bottomNavigation.setOnItemSelectedListener(){
-            when(it.itemId){
-                R.id.action_settings-> AboutFragment()
-            }
-            true
-        }*/
 
 
 
-/*
-    // buttom menu
-        val mainActivity = MainActivity()
-        //val secondFragment = SecondFragment()
-       // val aboutFragment = AboutFragment()
-        //aktualni stranka po spusteni
-        makeCurrentFragment(mainActivity)
-        //menu akce
-        binding.bottomNavigation.setOnItemSelectedListener() {
-            when(it.itemId){
-                R.id.action_note -> makeCurrentFragment(mainActivity)
-          //      R.id.action_api -> makeCurrentFragment(secondFragment)
-          //      R.id.action_settings -> makeCurrentFragment(aboutFragment)
-            }
-            true
-        }
-    }
-    private fun makeCurrentFragment(fragment: MainActivity) =
-        supportFragmentManager.beginTransaction().apply {
-            replace(R.id.fl_wrapper, fragment)
-            commit()
-        }*/
     }
   }
 

@@ -1,6 +1,5 @@
 package com.example.noteapp.ui
 
-import android.content.Context
 import android.os.Bundle
 import android.view.Window
 import android.widget.Toast
@@ -11,7 +10,7 @@ import com.example.noteapp.databinding.DialogAddActionItemBinding
 
 
 
-class AddActionItemDialog(context: Context, var addDialogListener: AddDialogListener) :
+class AddActionItemDialog(context: MainActivity, var addDialogListener: AddDialogListener) :
     AppCompatDialog(context) {
 
 
