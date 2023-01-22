@@ -37,6 +37,17 @@
             android:src="@drawable/add_box_menu"
             app:backgroundTint="@color/orange"
             tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabApi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/white"
+            android:src="@android:drawable/stat_sys_warning"
+            app:backgroundTint="@color/orange"
+            tools:ignore="MissingConstraints" />
+
     </FrameLayout>
 
 

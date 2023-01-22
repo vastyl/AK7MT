@@ -1,5 +1,6 @@
 package com.example.noteapp.ui
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -46,6 +47,11 @@ class MainActivity : AppCompatActivity() , KodeinAware {
                         viewModel.upsert(item)
                     }
                 }).show()
+        }
+        binding.fabApi.setOnClickListener {
+            val intent = Intent(this, ApiActivity::class.java)
+            // start your next activity
+            startActivity(intent)
         }
 
 

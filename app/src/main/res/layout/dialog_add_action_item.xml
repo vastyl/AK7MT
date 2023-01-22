@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/orange_light"
-    android:orientation="vertical" >
+    android:minWidth="350pt"
+    android:minHeight="200pt"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvTitle"
@@ -14,7 +16,7 @@
         android:autoText="false"
         android:text="@string/tvTitle"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="175dp" />
@@ -23,6 +25,7 @@
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autoText="false"
         android:contentDescription="Zde vložte poznámku"
         android:ems="10"
         android:inputType="textPersonName"
@@ -34,6 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
         android:text="Přidat"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -44,10 +48,12 @@
         android:id="@+id/tvCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
         android:text="Zrušit"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etName" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
