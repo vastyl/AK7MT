@@ -27,7 +27,7 @@ class AddActionItemDialog(context: Context, var addDialogListener: AddDialogList
         binding.tvAdd.setOnClickListener {
             val name = binding.etName.text.toString()
             if(name.isNullOrEmpty()) {
-                Toast.makeText(context, "Please enter a name", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Vložte prosím text", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 

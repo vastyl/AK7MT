@@ -36,4 +36,6 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="add_actionitem">Přidat novinku</string>
+    <string name="smaz_ni">Smazáni</string>
+    <string name="tvname">tvName</string>
 </resources>

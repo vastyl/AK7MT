@@ -26,7 +26,8 @@ class MainActivity : AppCompatActivity() , KodeinAware {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val viewModel = ViewModelProvider(this, factory).get(ActionItemViewModel::class.java)
+        viewModel = ViewModelProvider(this, factory).get(ActionItemViewModel::class.java)
+
         val adapter = ActionItemAdapter(listOf(), viewModel)
 
         binding.rvActionItems.layoutManager = LinearLayoutManager(this)
@@ -46,30 +47,39 @@ class MainActivity : AppCompatActivity() , KodeinAware {
                     }
                 }).show()
         }
-        /*  // buttom menu
-        val firstFragment = FirstFragment()
-        val secondFragment = SecondFragment()
-        val aboutFragment = AboutFragment()
+       /* binding.bottomNavigation.setOnItemSelectedListener(){
+            when(it.itemId){
+                R.id.action_settings-> AboutFragment()
+            }
+            true
+        }*/
+
+
+
+/*
+    // buttom menu
+        val mainActivity = MainActivity()
+        //val secondFragment = SecondFragment()
+       // val aboutFragment = AboutFragment()
         //aktualni stranka po spusteni
-        makeCurrentFragment(firstFragment)
+        makeCurrentFragment(mainActivity)
         //menu akce
         binding.bottomNavigation.setOnItemSelectedListener() {
             when(it.itemId){
-                R.id.action_note -> makeCurrentFragment(firstFragment)
-                R.id.action_api -> makeCurrentFragment(secondFragment)
-                R.id.action_settings -> makeCurrentFragment(aboutFragment)
+                R.id.action_note -> makeCurrentFragment(mainActivity)
+          //      R.id.action_api -> makeCurrentFragment(secondFragment)
+          //      R.id.action_settings -> makeCurrentFragment(aboutFragment)
             }
             true
         }
     }
-    private fun makeCurrentFragment(fragment: Fragment) =
+    private fun makeCurrentFragment(fragment: MainActivity) =
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.fl_wrapper, fragment)
             commit()
         }*/
-
     }
-}
+  }
 
 
 
