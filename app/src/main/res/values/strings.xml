@@ -41,8 +41,8 @@
     <string name="title_activity_action_api">ActionApi</string>
     <string name="tvTitle">Přidej poznámku</string>
     <string name="title_activity_api">ApiActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_home">O aplikaci</string>
+    <string name="title_dashboard">API Mars</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_api">API</string>
     <string name="title_about">O aplikaci</string>
@@ -50,4 +50,6 @@
     <string name="show_buy">Ukaž buy</string>
     <string name="show_rent">Ukaž rent</string>
     <string name="viewModel.response">Overview response</string>
+    <string name="text_About">O aplikaci</string>
+    <string name="text_About_full">Tato aplikace vzikala narychlo za účelem splnění zadání pro předmět mobilní technologie. Dnes už vím, že jsem si měl raději vybrat možnost seminární práce :-)</string>
 </resources>
