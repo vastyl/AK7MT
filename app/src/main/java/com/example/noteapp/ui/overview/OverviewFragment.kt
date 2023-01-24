@@ -1,10 +1,11 @@
 package com.example.noteapp.ui.overview
 
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.noteapp.R
 import com.example.noteapp.databinding.FragmentOverviewBinding
 
 class OverviewFragment : Fragment() {
@@ -37,14 +38,14 @@ class OverviewFragment : Fragment() {
             // Giving the binding access to the OverviewViewModel
             binding.viewModel = viewModel
 
-            setHasOptionsMenu(true)
+            //setHasOptionsMenu(true)
 
         return root
     }
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+    /*override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.overflow_menu, menu)
         //super.onCreateOptionsMenu(menu, inflater)
-    }
+    }*/
 
 
     override fun onDestroyView() {
